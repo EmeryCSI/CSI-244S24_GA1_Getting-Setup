@@ -8,8 +8,8 @@
 
 This repository is a part of CSI-244 at Renton Technical College.
 
-## Guided Activity Part 1 Using the Command Line
-We will complete the first Guided Activity together in class. If you are having problems with this assignment please refer to the lecture recording.
+## Part 1 Using the Command Line
+We will complete the first Guided Activity together in class.
 
 1. Clone the repository to your local machine.
 2. Make note of the folder where you cloned the repository.
@@ -72,12 +72,64 @@ We will complete the first Guided Activity together in class. If you are having 
     ```powershell
     pwd
     ```
-28. Type `git add .` to stage all updated files.
-29. Type `git status` to view all staged files.
-30. Type `git commit -m "Part 1 Complete"`.
-31. Type `git push` to push the changes to GitHub.
 
-## Guided Activity Part 2 Installing NVM and Node
+## Part 2 Intro To GitHub
+
+**Welcome to GitHub: A Beginner's Guide**
+
+GitHub is a platform where you can store and collaborate on your coding projects. It's like a big shared folder where you and others can work together on code.
+
+**Repository:**
+
+Think of a repository (repo for short) as a folder for your project. It's where you store all your files and keep track of changes. Each project on GitHub has its own repository.
+
+**Local Repository:**
+
+Think of your local repository as the version of your project that exists on your own computer. When you're coding, making changes, and saving them, you're doing all of that within your local repository. It's like your own personal workspace.
+
+**Remote Repository:**
+
+The remote repository, on the other hand, is the version of your project that lives on GitHub's servers. It's the central hub where everyone on your team can collaborate and share their work. When you push your changes to GitHub, you're updating the remote repository with the latest version of your project.
+
+**Commit:**
+
+When you make changes to your files in the repository, you have to save those changes. This is called a commit. It's like taking a snapshot of your project at a certain point in time.
+
+**Git add command:**
+
+Before you make a commit, you have to tell Git which changes you want to include. This is where the `git add` command comes in. You use it to tell Git, "Hey, I want to include these changes in my next commit." It's like putting your files into a basket before you check out at the grocery store.
+
+**Push:**
+
+Once you've made some commits and you're happy with your changes, you can push them to GitHub. This means you're sending your changes from your computer to the GitHub server so others can see them.
+
+**Pushing Changes:**
+
+When you've made changes to your project in your local repository and you're ready to share those changes with your team or make them available to the public, you use the `git push` command. This command sends your committed changes from your local repository to the remote repository on GitHub.
+
+- **Local Repository:** After you push your changes, your local repository remains unchanged. It still contains all the changes you've made, but now they're also reflected in the remote repository.
+
+- **Remote Repository:** The remote repository gets updated with the changes you've pushed from your local repository. Once the push is successful, anyone with access to the remote repository on GitHub can see and access the latest version of your project.
+
+So, in essence, pushing changes from your local repository to the remote repository is like updating the master copy of your project on GitHub, making your changes accessible to everyone collaborating on the project.
+
+So, to sum up:
+- **Repository**: Your project's folder on GitHub.
+- **Commit**: Saving changes to your project.
+- **Push**: Sending your commits to GitHub.
+- **Pull**: Getting changes from GitHub to your computer.
+- **Git add**: Putting changes into the commit basket.
+
+1. First make sure that you are in the ROOT folder of your project.
+2. Type `git add .` to stage all updated files.
+3. Type `git status` to view all staged files.
+    - You should see a list of files that you modified in part 1. These files are about to be pushed up to the remote repository.
+5. Type `git commit -m "Part 1 Complete"`.
+    - Now we have made a commit (a save) on our local repository. This has not been reflected on the remote repository yet.
+7. Type `git push` to push the changes to GitHub.
+    - This step will send our changes to the remote repository. Now if you go to your online repository at GitHub.com you will see your changes reflected.
+
+## Part 3 Installing NVM and Node
 
 1. Install NVM for your operating system. Windows users (https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe) Mac Users: https://dev.to/ajeetraina/how-to-install-and-configure-nvm-on-mac-os-5fgi
 2. Once NVM is installed type nvm at your terminal. You should see a list of commands.
